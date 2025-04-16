@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.header {
+  background-image: url('/images/headerbg.jpeg');
+  background-size: cover;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 72px;
+  
+  
+}
+
+.feature-episode {
+  background-image: url('/images/africabusiness.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 561px;
+  
+}
