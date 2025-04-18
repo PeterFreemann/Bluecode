@@ -3,7 +3,7 @@ import { faShare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import FontAwesomeIcon
 import { faGift } from "@fortawesome/free-solid-svg-icons";
 
-import React, { useRef } from "react";
+import React from "react";
 
 const cards = [
   {
