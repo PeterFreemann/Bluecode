@@ -36,42 +36,46 @@ export default function Editor() {
             </div>
           </div>
           <div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {cards.map((card) => (
+                <div key={card.id} className=" h-[442px] ">
+                  <img
+                    src={card.images}
+                    alt={card.name}
+                    className="h-[288px] w-full object-cover"
+                  />
+                  <div className="flex flex-row gap-2 p-1 py-4">
+                    <div className="bg-red-600 rounded-full flex items-center justify-center h-[50px] w-[50px]">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-8 w-8 text-white"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                    <div className="flex-[3]">
+                      <h1 className="text-xl font-bold text-left text-black text-[18px]">
+                        {card.name}
+                      </h1>
 
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-
-            {cards.map((card) => (
-              <div key={card.id} className=" h-[442px] bg-gray-700">
-                <img
-                  src={card.images}
-                  alt={card.name}
-                  className="h-[288px] w-full object-cover"
-                />
-                <div className="flex flex-row gap-2 p-1">
-                  <div className="flex-1 bg-gray-200" />
-                  <div className="flex-[3]">
-                    <h1 className="text-xl font-bold text-left text-white text-[18px]">
-                      {card.name}
-                    </h1>
-
-                    <div className="py-3 text-white text-sm flex gap-1 ">
-                      <p>{card.date}</p> | <p>{card.min}</p>
+                      <div className="py-3 text-black text-sm flex gap-1 ">
+                        <p>{card.date}</p> | <p>{card.min}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-                
-              </div>
-              
-            ))}
-            
-            
+              ))}
+            </div>
+            <div className="flex">
+              <img
+                src="/images/giftcards.jpeg"
+                alt=""
+                className="w-full mt-[20px] h-[99px]"
+              />
+            </div>
           </div>
-          <div className="flex">
-          <img src="/images/giftcards.jpeg" alt="" className="w-full mt-[20px] h-[99px]" />
-          </div>
-
-          </div>
-          
         </div>
       </div>
     </section>
