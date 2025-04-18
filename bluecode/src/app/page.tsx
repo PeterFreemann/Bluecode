@@ -3,7 +3,6 @@ import Header from "../component/header";
 import UnderHeader from "../component/UnderHeader";
 import Editor from "../component/Editor";
 import Trending from "../component/Trending";
-import Episode from "../component/Episodes";
 import Episodes from "../component/Episodes";
 import Categories from "@/component/Categories";
 import Educational from "@/component/Educational";
