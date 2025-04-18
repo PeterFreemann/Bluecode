@@ -12,11 +12,13 @@ import Tech from "@/component/Tech";
 import Prodcast from "@/component/Prodcast";
 import GetUpdates from "@/component/GetUpdates";
 import Partners from "@/component/Partners";
+import Footer from "@/component/Footer";
 
 export default function Home() {
   return (
     <div className="">
      <div className="text-5xl text-center">
+      <Header />
       
       <UnderHeader/>
       <Advert />
@@ -30,6 +32,7 @@ export default function Home() {
       <Prodcast/>
       <GetUpdates/>
       <Partners/>
+      <Footer/>
      </div>
      
     </div>
